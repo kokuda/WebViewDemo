@@ -1,0 +1,10 @@
+namespace WebViewClassLibrary
+{
+    [allowforweb]
+    [default_interface]
+    runtimeclass WebCallback
+    {
+        WebCallback();
+        void DoWork();
+    }
+}

@@ -1,0 +1,28 @@
+﻿<html>
+    <head>
+        <script type='text/javascript'>
+            function doSomething()
+            {
+                let webCallback = new chrome.webview.hostObjects.sync.WebViewClassLibrary.WebCallback();
+                webCallback.doWork();
+
+                // Get the object called class1.
+                let class1Instance = chrome.webview.hostObjects.sync.class1;
+                class1Instance.runMe();
+
+                // Try to construct the registered object
+                let WebViewClassLibraryCS2 = chrome.webview.hostObjects.sync.WebViewClassLibraryCS2;
+                let test = new WebViewClassLibraryCS2.Class1();
+                test.runMe();
+
+                document.getElementById('myDiv').innerText = 'Goodbye';
+                return "done";
+            }
+        </script>
+    </head>
+    <body>
+        <div id='myDiv'>Hello</div>
+        <!-- <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=49.18385493610995~-123.0456300992775&lvl=9.892854959086804&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+        </iframe> -->
+    </body>
+</html>
