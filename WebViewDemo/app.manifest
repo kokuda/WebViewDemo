@@ -28,5 +28,9 @@
             name="WebViewClassLibraryCS2.Class1"
             threadingModel="both"
             xmlns="urn:schemas-microsoft-com:winrt.v1" />
+	    <activatableClass
+            name="WebViewClassLibraryCS2.Thing"
+            threadingModel="both"
+            xmlns="urn:schemas-microsoft-com:winrt.v1" />
     </file>	
 </assembly>
